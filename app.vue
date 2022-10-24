@@ -34,7 +34,7 @@ const data = reactive({
 })
 
 const result  = await useFetch('/api/getBoltsSchedule').then((x) => {
-    //console.log('x', x)
+    console.log('x', x)
     x.data.value.forEach(game => {
         //format the date
         let thedate = new Date(game.scheduled)
