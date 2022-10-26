@@ -8,6 +8,7 @@ export default defineNuxtConfig({
 	],
     runtimeConfig: {
         sportRadarAPIkey: process.env.SPORT_RADAR_API_KEY,
+        firebaseInfo: process.env.FIREBASE_INFO,
         public: {
 
         }
