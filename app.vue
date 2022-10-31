@@ -39,14 +39,16 @@ const data = reactive({
     y: null
 })
 
-const result  = await useFetch('/api/getBoltsSchedule').then((x) => {
+//swap this with my database call api here when its ready
 
-    x.data.value.forEach(game => {
-        //format the date
-        let thedate = new Date(game.scheduled)
-        game.scheduled = thedate.toLocaleTimeString([], {year: 'numeric', month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit'})
-    })
-    data.y = x.data
-})
+//     await useFetch('/api/getBoltsSchedule').then((x) => {
+//     x.data.value.forEach(game => {
+//         //format the date
+//         let thedate = new Date(game.scheduled)
+//         game.scheduled = thedate.toLocaleTimeString([], {year: 'numeric', month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit'})
+//     })
+//     data.y = x.data
+// })
+
 
 </script>
